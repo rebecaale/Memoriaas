@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memórias do Ano Escolar</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Eventos</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Amigos</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Turmas</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Passeios</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Esportes</a></li>
+      </ul>
+      <img src="img/Logo_Escola.svg" alt="Logo Memórias Escolares" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Carrinho.svg" alt="Carrinho de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Reviva Seus Momentos Escolares</h2>
+    <p class="banner__texto">Veja as melhores lembranças do seu ano na escola!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Busque por amigos ou eventos">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novas Lembranças</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/foto_evento.jpg" width="200px" alt="Evento escolar"></div>
+        <div class="swiper-slide"><img src="img/foto_amigos.jpg" width="200px" alt="Foto com amigos"></div>
+        <div class="swiper-slide"><img src="img/foto_turma.jpg" width="200px" alt="Foto de turma"></div>
+        <div class="swiper-slide"><img src="img/foto_passeio.jpg" width="200px" alt="Passeio escolar"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também goste de...</h3>
+          <h2 class="descrição__titulo-livro">Fotos de Amigos</h2>
+          <p class="descrição__texto">Reviva os momentos com seus amigos e os melhores dias da escola!</p>
+        </div>
+        <img src="" descrição__imagem="" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar memória" /></li>
+          <li class="botões__item"><img src="img/126510.png" alt="Adicionar ao carrinho" /></li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Momentos Populares</h2>
+    <div class="swiper">
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/foto_esporte.jpg" width="200px" alt="Atividades esportivas"></div>
+        <div class="swiper-slide"><img src="img/foto_formatura.jpg" width="200px" alt="Foto de formatura"></div>
+        <div class="swiper-slide"><img src="img/foto_turma_especial.jpg" width="200px" alt="Foto de turma especial"></div>
+        <div class="swiper-slide"><img src="img/foto_festa.jpg" width="200px" alt="Festa escolar"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <img src="img/Estrelas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Fotógrafo Destaque</h3>
+          <h2 class="descrição__titulo-livro">Carlos, o Fotógrafo</h2>
+          <p class="descrição__texto">Registrou os melhores momentos da escola para que você os relembre com carinho.</p>
+        </div>
+        <img src="img/Fotografo.svg" class="descrição__imagem">
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar memória"></li>
+          <li class="botões__item"><img src="img/126510.png" alt="Adicionar ao carrinho"></li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">Categorias Visitadas Recentemente</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Eventos</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Amigos</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Turmas</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Passeios</a></li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Receba Nossas Atualizações!</h2>
+    <p class="contato__texto">Cadastre-se para saber de novas memórias e fotos adicionadas ao álbum escolar.</p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Memórias Escolares</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+</html>
